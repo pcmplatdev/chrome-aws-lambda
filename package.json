@@ -1,9 +1,9 @@
 {
   "name": "chrome-aws-lambda",
   "private": false,
-  "version": "10.1.0",
+  "version": "1.0.0",
   "author": {
-    "name": "Alix Axel"
+    "name": "Postcardmania"
   },
   "license": "MIT",
   "description": "Chromium Binary for AWS Lambda and Google Cloud Functions",
@@ -28,20 +28,17 @@
   },
   "devDependencies": {
     "@types/node": "^10.17.55",
-    "puppeteer-core": "^10.1.0",
+    "puppeteer-core": "^20.1.0",
     "rimraf": "^3.0.2",
-    "typescript": "4.3.2"
+    "typescript": "4.7.4"
   },
   "peerDependencies": {
-    "puppeteer-core": "^10.1.0"
+    "puppeteer-core": "^20.1.0"
   },
-  "bugs": {
-    "url": "https://github.com/alixaxel/chrome-aws-lambda/issues"
-  },
-  "homepage": "https://github.com/alixaxel/chrome-aws-lambda",
+  "homepage": "https://postcardmania.com/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/alixaxel/chrome-aws-lambda.git"
+    "url": "https://github.com/pcmplatdev/chrome-aws-lambda"
   },
   "keywords": [
     "aws",

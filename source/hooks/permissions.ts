@@ -9,7 +9,9 @@ export = async function (page: Page): Promise<Page> {
   const handler = () => {
     let query = window.navigator.permissions.query;
 
-    (Permissions as any).prototype.query = function (parameters: DevicePermissionDescriptor | MidiPermissionDescriptor | PermissionDescriptor | PushPermissionDescriptor) {
+    (Permissions as any).prototype.query = function (
+      parameters: PermissionDescriptor | PermissionDescriptor | PermissionDescriptor | PermissionDescriptor
+    ) {
       if (parameters?.name?.length > 0) {
         return Promise.resolve({
           onchange: null,
@@ -25,4 +27,4 @@ export = async function (page: Page): Promise<Page> {
   await page.evaluateOnNewDocument(handler);
 
   return page;
-}
+};
